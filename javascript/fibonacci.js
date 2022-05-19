@@ -1,5 +1,17 @@
 function fibonacci(num) {
   // type your code here
+   let a = 0
+   b = 1
+   let temp 
+  
+    while (num >= 0){
+      temp = a;
+      a = a + b;
+      b = temp;
+      num--;
+    }
+  
+    return b;
 }
 
 if (require.main === module) {
